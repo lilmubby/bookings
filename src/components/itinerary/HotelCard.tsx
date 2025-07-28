@@ -24,7 +24,7 @@ export default function HotelCard({ hotel }: Props) {
           </p>
         </div>
         <button
-          onClick={() => removeHotel(hotel.id)}
+          onClick={() => {}}
           className="text-red-500 text-sm hover:underline self-start"
         >
           Remove
