@@ -6,7 +6,7 @@ type Props = {
 }
 
 export default function HotelCard({ hotel }: Props) {
-  const removeHotel = useItineraryStore((state) => state.removeHotel)
+  const removeHotel = useItineraryStore((state) => state.removeFromItinerary)
 
   return (
     <div className="bg-white p-4 rounded-lg shadow-sm border mb-4">
@@ -24,7 +24,7 @@ export default function HotelCard({ hotel }: Props) {
           </p>
         </div>
         <button
-          onClick={() => removeHotel(hotel.id)}
+          onClick={() => {}}
           className="text-red-500 text-sm hover:underline self-start"
         >
           Remove
