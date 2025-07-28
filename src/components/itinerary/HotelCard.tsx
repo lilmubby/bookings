@@ -6,7 +6,7 @@ type Props = {
 }
 
 export default function HotelCard({ hotel }: Props) {
-  const removeHotel = useItineraryStore((state) => state.removeHotel)
+  const removeHotel = useItineraryStore((state) => state.removeFromItinerary)
 
   return (
     <div className="bg-white p-4 rounded-lg shadow-sm border mb-4">
